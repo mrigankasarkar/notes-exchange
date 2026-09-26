@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Exchange</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+    <h1>Notes Exchange</h1>
+
+    <a href="upload.html" class="upload-button">
+        Upload Notes
+    </a>
+</header>
+
+    <main>
+
+        <section class="hero">
+            <h2>Find the notes you need.</h2>
+            <p>Search for notes by subject, chapter or topic.</p>
+
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="searchInput"
+                    placeholder="Search notes..."
+                >
+
+                <button onclick="searchNotes()">Search</button>
+            </div>
+        </section>
+
+        <section class="subjects">
+
+            <h2>Browse Subjects</h2>
+
+            <div class="subject-container">
+
+                <button onclick="selectSubject('Physics')">
+                    Physics
+                </button>
+
+                <button onclick="selectSubject('Chemistry')">
+                    Chemistry
+                </button>
+
+                <button onclick="selectSubject('Mathematics')">
+                    Mathematics
+                </button>
+
+                <button onclick="selectSubject('Biology')">
+                    Biology
+                </button>
+
+                <button onclick="selectSubject('English')">
+                    English
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="notes">
+
+            <h2>Latest Notes</h2>
+
+            <div id="notesContainer">
+
+                <div class="note-card">
+
+                    <h3>Ray Optics</h3>
+
+                    <p>Physics • Class 12</p>
+
+                    <button onclick="viewNote('Ray Optics')">
+                        View Note
+                    </button>
+
+                </div>
+
+                <div class="note-card">
+
+                    <h3>Organic Chemistry</h3>
+
+                    <p>Chemistry • Class 12</p>
+
+                    <button onclick="viewNote('Organic Chemistry')">
+                        View Note
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Notes Exchange</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

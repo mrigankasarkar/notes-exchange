@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Upload Notes - Notes Exchange</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Notes Exchange</h1>
+        <p>Share your knowledge with other students.</p>
+    </header>
+
+
+    <main>
+
+        <section class="upload-section">
+
+            <h2>Upload Your Notes</h2>
+
+            <p class="upload-description">
+                Share your notes with other students.
+            </p>
+
+
+            <div class="upload-page">
+
+    <h2>Upload Your Notes</h2>
+
+    <form id="uploadForm">
+
+                <label for="noteTitle">
+                    Note Title
+                </label>
+
+                <input
+                    type="text"
+                    id="noteTitle"
+                    placeholder="Example: Ray Optics"
+                    required
+                >
+
+
+                <label for="subject">
+                    Subject
+                </label>
+
+                <select id="subject" required>
+
+                    <option value="">
+                        Select Subject
+                    </option>
+
+                    <option value="Physics">
+                        Physics
+                    </option>
+
+                    <option value="Chemistry">
+                        Chemistry
+                    </option>
+
+                    <option value="Mathematics">
+                        Mathematics
+                    </option>
+
+                    <option value="Biology">
+                        Biology
+                    </option>
+
+                    <option value="English">
+                        English
+                    </option>
+
+                </select>
+
+
+                <label for="className">
+                    Class
+                </label>
+
+                <select id="className" required>
+
+                    <option value="">
+                        Select Class
+                    </option>
+
+                    <option value="Class 10">
+                        Class 10
+                    </option>
+
+                    <option value="Class 11">
+                        Class 11
+                    </option>
+
+                    <option value="Class 12">
+                        Class 12
+                    </option>
+
+                    <option value="College">
+                        College
+                    </option>
+
+                </select>
+
+
+                <label for="chapter">
+                    Chapter / Topic
+                </label>
+
+                <input
+                    type="text"
+                    id="chapter"
+                    placeholder="Example: Ray Optics"
+                    required
+                >
+
+
+                <label for="file">
+                    Select PDF
+                </label>
+
+                <input
+                    type="file"
+                    id="file"
+                    accept=".pdf"
+                    required
+                >
+
+
+                <button type="submit">
+                    Upload Note
+                </button>
+
+                </form>
+
+    <p style="text-align: center; margin-top: 20px;">
+        <a href="index.html">← Back to Notes</a>
+    </p>
+
+</div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Notes Exchange
+        </p>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="upload.js"></script>
+
+</body>
+
+</html>
