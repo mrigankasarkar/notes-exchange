@@ -62,6 +62,10 @@ loginButton.addEventListener("click", async function() {
 
 
     authMessage.textContent =
-        "Login successful! 🎉";
+    "Login successful! 🎉";
+
+setTimeout(function() {
+    window.location.href = "index.html";
+}, 1000);
 
 });
